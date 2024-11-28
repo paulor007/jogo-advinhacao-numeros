@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://font.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Adivinhação de Números</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container_informacoes">
+            <div class="container_texto">
+                <h1>Adivinhe o <span class="container_texto_azul">número secreto</span></h1>
+                <p class="texto_paragrafo">Escolhe um número entre 1 a 100</p>
+            </div>
+            <input type="number" min="1" max="100" class="container_input" id="guessInput">
+            <div class="chute container_botoes">
+                <button onclick="verificarChute()" class="container_botao">Chutar</button>
+                <button onclick="reiniciarJogo()" id="reiniciar" class="container_botao" disabled>Novo jogo</button>
+            </div>
+        </div>
+        <img src="assets/image/ia.png" alt="Uma pessoa olhando para a esquerda" class="container_imagem_pessoa">
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
